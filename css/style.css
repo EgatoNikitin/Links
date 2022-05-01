@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+html,
+body {
+    overflow: hidden;
+    color: #fefeff;
+}
+
+body {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    margin-left: 6px;
+    position: relative;
+}
+a::after {
+    content: "";
+    margin-block: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.45s ease;
+}
+a:hover::after {
+    transform: scaleX(1);
+}
+canvas {
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+.inst {
+    margin: 0;
+}
+.clock {
+    margin-top: 10px;
+}
+.wrapper {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+}
+h1 {
+    margin-bottom: 10px;
+}
